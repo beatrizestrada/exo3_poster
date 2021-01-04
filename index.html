@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='description' content=''>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<!--Doubt you'll need to change much or anything above-->
+
+<!--STYLE-->
+<!--Add your css rules here. body affects the whole thing (everything between body tags), so its the defaults essentailly. If it has a . in front then its a set of rules for anything with that class e.g. .subsubtitlebox makes the abstract/methods/future work headings the same etc. You'll need to change the src's for the images etc to a web address eventually.-->
+<style>
+
+
+
+body{
+  background-color: #000000;
+  Font-family:"Trebuchet MS", Helvetica, sans-serif;
+  Text-align:justify;
+  color: white;
+  font-size: 18px;
+
+}
+
+
+.title{
+  background-color: #000000;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16px;
+  text-align:center;
+  color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  padding: 20px;
+  border-style: solid;
+  border-color: #ADFCED;
+  Border-width: 10px;
+}
+
+.subtitlebox{
+  background-color: #8CCDDC;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-size: 25px;
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.subsubtitlebox{
+  background-color: #000000;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  Font-size: 20px;
+  Text-align:center;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  Border-bottom-color: #85C1E9;
+  Border-top-color: #85C1E9;
+  Border-bottom-width: 5px;
+  Border-style: solid;
+  Border-left-color: #000000;
+  Border-right-color: #000000;
+}
+
+.textbox{
+  background-color: #000000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+  color: #fffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-color: #000000;
+  Border-width: 1px;
+}
+
+.textboxpic{
+  background-color: #000000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  Margin-top: 120px;
+  padding: 10px;
+  text-align: justify;
+  color: #fffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-color: #000000;
+  Border-width: 5px;
+}
+
+.textsub{
+  background-color: #000000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 1px;
+  padding: 1px;
+  text-align: right;
+  color: #fffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-color: #000000;
+  Border-width: 1px;
+}
+
+.textboxyellow{
+  background-color: #000000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+  color: #fffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-color: #F7DC6F;
+  Border-width: 5px;
+}
+
+.textboxmodel{
+  Background-colour:#000000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  text-align: centre;
+  color: #fffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: dotted;
+  border-color: #85FC41;
+  Border-width: 5px;
+ 
+}
+
+.textboxarrows{
+  Background-colour:#000000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  Font-size: 50px;
+  margin: 1px;
+  padding: 1px;
+  text-align: centre;
+  color: #fffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: dotted;
+  border-color: #000000;
+  Border-width: 1px;
+ 
+}
+
+.videobox{
+  background-color: #000000;
+  Text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 10px;
+  padding: 20px;
+  color: #CAF0F8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.futurebox{
+  background-color: #0077B6;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  margin: 10px;
+  padding: 20px;
+  text-align:left;
+}
+
+
+h2{
+  background-color: #00B4D8;
+  margin: 0px;
+  padding: 20px;
+}
+
+h3{
+  background-color: #00B4D5;
+  font-color: #000000 ;
+  margin: 20px;
+  padding: 5px;
+}
+
+li {
+    padding-bottom: 10px;
+    Text-align: justify;
+}
+
+.nametext{
+  color: #ADEAFC;
+}
+
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.obsbox{
+  background-color: #000000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 10px;
+  padding: 5px;
+  color: #fffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+</style>
+
+
+
+
+<!--BODY-->
+<body>
+<!--below, the class row defines what will appear on a row, within a row the column size must add up to 12 (it's a boostrap thing), but the width of the column is defined by this. The majority of it is within a container which makes it all a column, you can make it a full width container so it fits the whole screen instead.-->
+
+
+
+
+<!--ABSTRACT -->
+
+<div class="container">
+
+  <!--TITLE-->
+<div class="title text-center shadow">
+  <h1>Modelling dusty-tails of disintegrating exoplanets</h1>
+  <p class="nametext" color=#fffff><b>Beatriz Campos Estrada*, Marija Jankovic, James E. Owen, Anna Wilson</b></p>
+  <p><b>Imperial College London</b></p>
+  <p><small>*from September 2020: Niels Bohr Institute. University of Copenhagen.</small></p>
+
+</div>
+
+<!--Abstract sub heading -->
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="subtitlebox shadow">Abstract</h2>
+    </div class="col-sm-12">
+  </div>
+
+
+<!--Abstract 3 boxes -->
+  <div class="row">
+
+    <div class="col-sm-6">
+      <h3 class='subsubtitlebox'>What is a disintegrating rocky planet?</h3>
+      <p class ="textbox">A planet that due to its proximity to its host-star is evaporating and presents a comet-like dust tail. So far three of these planets have been observed: KIC 1255b, KOI 2700b and K2 22b.</p>
+    </div>
+
+    <div class="col-sm-6" >
+      <h3 class ='subsubtitlebox'>Why should we study these planets?</h3>
+      <p class ="textbox">Such planets are potentially the key to a better understanding of planet formation if one is able to determine the composition of the dust tail. This can be achieved by modelling the dynamics of the tail of dust and comparing it to observations.</p>
+    </div>
+
+</div>
+<div class = 'row'>
+
+    <div class="col-sm-12" >
+      <h3 class ='subsubtitlebox'>Why is this research novel?</h3>
+      <p class ="textbox">We are building a new self-consistent model of the dust tail which includes the dust dynamics, sublimation and optical depth evolution. This is the first time the optical depth evolution is being considered in this scenario. With the new simulations, we are able to constrain properties of the planetary outflow and dust, as well as constraining for the first time the geometry of the outflow, which is not launched spherically. </p>
+    </div>
+
+
+
+
+
+  </div>
+  <!--Abstract 3 boxes END -->
+
+<!--ABSTRACT END -->
+
+
+
+<!--Observations -->
+
+<!--Observations sub heading -->
+<div class="row">
+  <div class="col-sm-12">
+    <h2 class="subtitlebox shadow">Observations</h2>
+  </div>
+</div>
+
+<!--Physics 3 boxes -->
+<div class="row" >
+  <div class="col-sm-4">
+    <h3 class='subsubtitlebox'>KIC 1255b</h3>
+    <p class ="obsbox"><img src='https://raw.githubusercontent.com/beatrizestrada/exo3_poster/master/kic_1255b.png' width='100%' height='auto'></p>
+  </div>
+
+  <div class="col-sm-4">
+    <h3 class='subsubtitlebox'>KOI 2700b</h3>
+    <p class ="obsbox"><img src='https://raw.githubusercontent.com/beatrizestrada/exo3_poster/master/koi_2700.png' width='100%' height='auto'></p>
+  </div>
+
+  <div class="col-sm-4">
+    <h3 class='subsubtitlebox'>K2 22b</h3>
+    <p class ="obsbox"><img src='https://raw.githubusercontent.com/beatrizestrada/exo3_poster/master/k2_22b.png' width='100%' height='auto'></p>
+  </div>
+</div>
+<div class='row'>
+ <div class= "col-sm-12">
+    <p class='textbox'>Transit profiles of KIC 1255b, KOI 2700b and K2 22b, discovered by <em> Rappaport et al. (2012) </em>, <em> Rappaport et al. (2014) </em> and <em> Sanchis-Ojeda et al. (2015)</em> respectively. Note the high asymmetry present in these profiles compared to a "regular" transit.</p>
+
+</div>
+</div>
+
+
+<!--Observations END -->
+
+
+
+<!--Evidence -->
+
+<!--Evidence sub heading -->
+<div class="row">
+  <div class="col-sm-12">
+    <h2 class="subtitlebox shadow"> Evidence for the dusty-tail scenario</h2>
+    <p class='textboxyellow'> Due to the proximity of the USP planet to its host star, the planet is heated up to thousands of Kelvin. The planet’s surface ends up partially sublimating. The particles from the planet’s surface condense in its atmosphere, and eventually leak through atmospheric escape, creating a trailing (or leading) dust-tail. The figure below shows how different parts of the transit of KIC 1255b correspond to its transit profile.</p>
+
+    <p class='obsbox'><img src='https://raw.githubusercontent.com/beatrizestrada/exo3_poster/master/transit_example.png' width=100% height='auto'></p>
+  </div>
+</div>
+
+<div class ='row'>
+  <div class="col-sm-4">
+	<h3 class="subsubtitlebox"> A. Positive bump in flux before transit </h3>
+	<p class ='textbox'> When the evaporating planet is not in the vicinity of the star, the observer receives the full stellar flux from the star (seen in panel 1 above). When the evaporating planet is about to transit the star, a part of the star’s light is scattered towards the line-of-sight of the observer by the dust particles, creating a positive “bump” in stellar flux (seen in panel 2 above). </p>
+  </div>
+  <div class="col-sm-4">
+	<h3 class="subsubtitlebox"> B. Long egress tail </h3>
+	<p class='textbox'> The long egress tail observed for KIC 1255b and KOI 2700b is due to the absorption of light by the dust particles, as well as the sublimation of the particles - as the particles become smaller along the transit, they block less stellar light creating the long egress observed (seen in panels 3 and 4 above).</p>
+  </div>
+  <div class="col-sm-4">
+	<h3 class="subsubtitlebox"> C. Positive bump in flux after transit for K2 22b </h3>
+	<p class='textbox'> The positive “bump” in stellar flux seen in K2-22b’s transit profile after the transit egress can be explained by the existence of a leading dusty-tail. The dust forward scatters light towards the line-of-sight of the observer before and after the transit.</p>
+  </div>
+</div>
+
+<div class ='row'>
+	<div class='col-sm-12'>
+		<h3 class ='subsubtitlebox'> D. Transit depth variability </h3>
+		<p class='textbox'> The observations also show variable transit depths for the three planets, indicating the transit depth is not constant each time the planet transits the star, unlike a regular transit. The cause of this variability is still not well known. We will propose a new idea to explain this variability that directly links to the existence of a disintegrating planet. The transit depth variability for KIC 1255b is shown below.</p>
+		<p class='textbox'><img src='https://raw.githubusercontent.com/beatrizestrada/exo3_poster/master/trans_var.png' width=100% height='auto'></p>
+	</div>
+</div>
+<!--Evidence END-->
+
+
+
+<!--MODEL-->
+<!--Model sub heading -->
+<div class='row'>
+	<div class='col-sm-12'>
+	   <h2 class='subtitlebox shadow'> Model </h2>
+	</div>
+</div>
+<div class='row'>
+	<div class ='col-sm-12'>
+		<p class='textboxyellow'> Previous dusty-tail models consider the dust to be optically thin throughout the tail. Here we look to evaluate the impact of the dust particle's optical depth evolution in the dust dynamics (recall the radiation pressure force acting on a dust particle is exponentially dependent on the particle's optical depth).</p>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-sm-12'>
+		<h3 class ='subsubtitlebox'> Model structure </h3>
+	</div>
+</div>
+<div class ='row'>
+        <div class='col-sm-12'>
+		<p class='textbox'><img src='https://raw.githubusercontent.com/beatrizestrada/exo3_poster/master/model.png' width=100% height='auto'></p>
+	</div>
+</div>
+
+
+<!--Model END-->
+<!--Preliminary results-->
+<div class='row'>
+	<div class='col-sm-12'>
+		<h2 class='subtitlebox shadow'> Preliminary Simulations</h2>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-sm-12'>
+		<p class='textboxyellow'> The preliminary results are from dynamical simulations at a constant optical depth of 0.1. At a given instant we can introduce the dust particles information on the optical depth calculator to estimate what the optical depth of each particle is in that specific moment. The optical depth and dynamical calculation will be coupled in the near future so the optical depth values are update at each time step of the method. We simulate KIC 1255b and K2 22b. KOI 2700b is not studied here as we believe the physics of its dusty-tail is very similar to KIC 1255b’s and its average transit depth is much smaller. For the first simulations we consider the dust to be composed of Corundum (a crystalline form of aluminium oxide), following the composition constraints obtained by van Lieshout et al. (2016).</h2>
+	<h3 class="subsubtitlebox"> Preliminary results</h3>
+</div>
+<div class='row'>
+	<div class='col-sm-6'>
+		<p class ='textbox'>
+		<ul>
+			<li> The dust’s optical depth is thick up until a distance of five planetary radii from the planet’s centre (for KIC 1255b). This can have a very significant impact on the dynamics of the dust, stressing the significance of having a model that includes the optical depth evolution throughout. </li>
+
+			<li> The leading tail in K2 22b can be explained by a less dominant radiation pressure force (than compared to the other planets with dusty-tails) with origin in the fact that the K2-22 star is a red dwarf, meaning it has a lower temperature than KIC 12557548 and KOI 2700 which are K-type main sequence stars.</li>
+			
+		</ul>
+		</p>
+	</div>
+	<div class ='col-sm-6'>
+	<p class ='textbox'>
+	<ul>
+		<li> For K2 22b, a leading tail is found to be favoured by a planetary outflow coming from the day side of the planet - see figure below.</li>
+		<li> For KIC 1255b, dust grains of an initial size smaller than 0.1μm do not survive long enough to produce a tail like the one observed. In contrast, dust grains with initial sizes bigger than 1μm survive for too long, eventually creating a “ring” of dust around the planet which goes against what is observed.</li>
+	</ul>
+	</p>
+	
+	</div>
+</div>
+<div class='row'>
+	<div class='col-sm-12'>
+		
+		<p class ="videobox">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/XFiEaO3xnmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+
+	</div>
+</div>
+
+<div class='row'>
+	<div class ='col-sm-8'>
+		<p class="textbox"><img src='https://raw.githubusercontent.com/beatrizestrada/exo3_poster/master/K2_22.png' width=100% height='auto'></p>
+
+	</div>
+	<div class='col-sm-4'>
+     		<p class = "textbox"> K2-22b  simulations  with  different  conditions for an initial dust grain size of 0.35μm. Note these light curves do not include light scattering by the dust particles. <em> Top panels </em>: <em>Left</em> - Observer’s frontal view of the system at an orbital phase of zero (planet right between observer and star) - not to scale. <em>Right </em> - Light-curve of the system shown on the left. Here, the particles are thrown off radially outward from the planet’s day side at the beginning of the simulation. <em> Bottom panels </em> : <em> Left </em> -Observer’s frontal view of the system at an orbital phase  of  zero  -  not  to  scale. <em> Right </em> - Light-curve  of  the  system  shown  on  the  left.  Here the particles are thrown off radially outward from the whole planetary surface at the beginning of the simulation.</p>
+	</div>
+</div>
+
+<div class ='row'>
+	<div class='col-sm-6'>
+		<h2 class='subtitlebox shadow'> Upcoming work</h2>
+		<p class ='textbox'>
+		<ul>	
+			<li> Coupling dynamics and sublimation model with optical depth evolution;</li>
+			<li> Synthetic light-curve construction and comparison to observations - include scattering effects by dust particles;</li>
+			<li> Study the origin of the transit depth variability - does it originate from the possible optically thick coma surrounding the planets?</li>
+			<li> Test different dust compositions and validate them by comparing synthetic light-curves to the observed ones;</li>
+		</ul>
+		</p>
+	</div>
+	<div class='col-sm-6'>
+		<h2 class='subtitlebox shadow'> References</h2>
+		<p class ='textbox'>
+
+		<ul style="list-style-type:none;">
+			<li> Rappaport S., et al., 2012, <a href="https://iopscience.iop.org/article/10.1088/0004-637X/752/1/1">ApJ, 752, 1</a> </li>
+			<li> Rappaport S., Barclay T., DeVore J., Rowe J., Sanchis-Ojeda R., Still M., 2014, <a href ="https://ui.adsabs.harvard.edu/abs/2014ApJ...784...40R/abstract">ApJ, 784, 40</a> </li>
+			<li> Sanchis-Ojeda R., et al., 2015, <a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...812..112S/abstract">ApJ, 812, 112</a> </li>
+			<li> van Lieshout R., Rappaport S. A., 2018, Disintegrating Rocky Exoplanets. p. 15 </li>
+			<li> van Lieshout R., et al., 2016, <a href="https://ui.adsabs.harvard.edu/abs/2016A%26A...596A..32V/abstract">A&A, 596, A32</a></li>
+
+		</ul>
+		</p>
+	</div>
+</div>
+<!--References -->
+
+
+
+
+
+
+
+
+</body>
+</html>
